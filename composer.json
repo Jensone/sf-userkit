@@ -1,0 +1,17 @@
+{
+    "name": "jensone/sf-userkit",
+    "description": "A set of user functionalities in your Symfony web application like a breeze",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jensone\\Userkit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jensone",
+            "email": "hello@jensone.com"
+        }
+    ],
+    "require": {}
+}
