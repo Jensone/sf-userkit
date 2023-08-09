@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Create an account{% endblock %}
+
+{% block body %}
+    <div class="container">
+
+        <div class="form-signing w-100 m-auto">
+            <h1 class="h3 mb-3 fw-normal">Create an account</h1>
+
+            {% if error is defined %}
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
+            {% endif %}
+
+            <form action="{{ path('app_register') }}" method="post">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="john@doe.com" required>
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <div class="form-floating">
+                    <input type="checkbox" class="form-control" id="floatingCheckbox" required>
+                    <label for="floatingCheckbox">Agree to terms and conditions</label>
+                </div>
+                <button class="btn btn-primary w-100 py-2" type="submit">Create account</button>
+            </form>
+
+            <p class="mt-5 mb-3 text-body-secondary">&copy; {{ 'now'|date('Y') }}</p>
+        </div>
+
+    </div>
+{% endblock %}

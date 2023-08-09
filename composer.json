@@ -1,6 +1,7 @@
 {
     "name": "jensone/sf-userkit",
     "description": "A set of user functionalities in your Symfony web application like a breeze",
+    "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -13,5 +14,8 @@
             "email": "hello@jensone.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^8.1",
+        "symfony/framework-bundle": "^6.0"
+    }
 }
